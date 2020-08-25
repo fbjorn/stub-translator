@@ -1,5 +1,2 @@
 # stub-translator
 test
- 
- 
- 
