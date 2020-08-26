@@ -3,14 +3,5 @@
 trigger:
 - master
 
-
 steps:
-  # required to cause pipeline triggering downstream
-  - task: CopyFiles@2
-    inputs:
-      contents: $(System.DefaultWorkingDirectory)/**/*.yml
-      targetFolder: $(Build.ArtifactStagingDirectory)
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathtoPublish: $(Build.ArtifactStagingDirectory)
-      artifactName: dummy-$(Build.BuildId)
+  - script: "echo New standards available"
