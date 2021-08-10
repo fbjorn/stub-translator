@@ -4,4 +4,6 @@ ENV PYTHONUNBUFFERED=1
 RUN echo 121346 > test.txt
 
 EXPOSE 8080
+
+
 ENTRYPOINT ["python", "-m", "http.server", "8080"]
