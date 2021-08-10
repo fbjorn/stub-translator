@@ -1,2 +1,2 @@
 # stub-translator
-test
+test 2
